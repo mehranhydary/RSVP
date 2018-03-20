@@ -3,7 +3,7 @@ pragma solidity ^0.4.18;
 contract RSVP {
     
     uint256 public minDeposit; // variable to hold the required minimum deposit
-    address public owner; // variable to hold who the owner of the contract is (only the own can refund the deposit - this stops people from calling the refund function even if they are not at the event)
+    address public owner; // variable to hold who the owner of the contract is (only the owner can refund the deposit - this stops people from calling the refund function even if they are not at the event)
     
     mapping (address => uint256) public balances; // mapping that stores who and how much ETH was put into the contract
     
